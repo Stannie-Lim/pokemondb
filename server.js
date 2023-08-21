@@ -16,10 +16,19 @@ app.get("/", async (req, res, next) => {
           <h1>
             Wow you actually came here! Didn't think anyone would come to this url.
             <a href="/api/pokemon">Go here instead. Its endpoint is /api/pokemon </a>
-
-            Since you actually came here, here's how you post a new pokemon
-            fetch('');
-          </h1>
+            </h1>
+            <h3>
+              Since you actually came here, here's how you post a new pokemon
+            </h3>
+            <div>
+              fetch('https://stanniepokemondb.onrender.com/api/pokemon', {
+                method: 'POST',
+                body: {
+                  name: 'stannie',
+                  imageURL: 'your image url',
+                },
+              });
+            </div>
           <div>
             <img style="height: 500px;" src="https://ca.slack-edge.com/E05LYDFST6K-U02UDKBM3SA-090e628e314b-72" />
           </div>
